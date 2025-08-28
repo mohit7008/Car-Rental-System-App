@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Payment</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: #e08530;
+            text-align: center;
+        }
+
+        header {
+            background: rgba(0,0,0,0.6);
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #ffffff10;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #f1c40f;
+        }
+
+        .details {
+            text-align: left;
+            margin: 20px 0;
+            padding: 15px;
+            background: #ffffff15;
+            border-radius: 10px;
+            line-height: 1.8;
+        }
+
+        .details p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        #payBtn {
+            padding: 12px 25px;
+            font-size: 18px;
+            background: #f1c40f;
+            color: #000;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+        }
+
+        #payBtn:hover {
+            background: #e67e22;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 15px;
+            background: rgba(0,0,0,0.7);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>🚗 Car Rental System</header>
+
+    <div class="container">
+        <h2>Secure Payment</h2>
+        <div class="details">
+            <p><strong>Booking ID:</strong> #12345</p>
+            <p><strong>Car:</strong> Hyundai i20 (AC, 5 Seater)</p>
+            <p><strong>Pickup Date:</strong> 28 Aug 2025</p>
+            <p><strong>Drop Date:</strong> 30 Aug 2025</p>
+            <p><strong>Total Amount:</strong> ₹500</p>
+        </div>
+        <button id="payBtn">💳 Pay Now</button>
+    </div>
+
+    <footer>
+        &copy; 2025 Car Rental System | Secure Payments Powered by Razorpay
+    </footer>
+
+    <script>
+        document.getElementById('payBtn').onclick = function(e){
+            var options = {
+                "key": "rzp_test_xxxxxxx", // 👈 Apna Razorpay Key ID lagao
+                "amount": 50000, // 500 INR = 50000 paise
+                "currency": "INR",
+                "name": "Car Rental System",
+                "description": "Booking Payment",
+                "handler": function (response){
+                    alert("✅ Payment Successful: " + response.razorpay_payment_id);
+                    window.location.href = "myapp://payment_success?payment_id=" + response.razorpay_payment_id;
+                },
+                "prefill": {
+                    "name": "Mohit Yadav",
+                    "email": "mohit@example.com",
+                    "contact": "9876543210"
+                },
+                "theme": {
+                    "color": "#f1c40f"
+                }
+            };
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+            e.preventDefault();
+        }
+    </script>
+
+</body>
+</html>
