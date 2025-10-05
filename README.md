@@ -3,8 +3,8 @@ Car Rental System App
 <br>
 A complete Android-based Car Rental System that allows users to browse, rent, and manage cars easily.
 Built using Java, XML, and Firebase.
-
 <br>
+
 
 👥 User Side Features
 
@@ -20,7 +20,8 @@ Built using Java, XML, and Firebase.
 5. View Bookings – Users can see all their previous and current bookings
 
    <br>
-1. User Authentication (Login / Signup)
+
+ 1. User Authentication (Login / Signup)
 
 The app provides a secure and easy-to-use authentication system powered by Firebase Authentication.
 Users can create accounts using:
@@ -70,7 +71,7 @@ Key points:
 
 <br>
 
-🚀 Future Improvements
+ Future Improvements
 <br> 
 
 🌐 Google Maps integration for car pickup/drop locations
@@ -85,8 +86,8 @@ Key points:
 
 👨‍💻 Developed By :  Mohit Yadav
 
-📧 mohityaduvanshi871@gmail.com
+ 📧 Gmail : mohityaduvanshi871@gmail.com
 
-💻 github.com/mohit7008
+💻 Github : github.com/mohit7008
 
-🔗 linkedin.com/in/mohityadav4169
+🔗 Likedin : linkedin.com/in/mohityadav4169
