@@ -8,6 +8,7 @@ Built using Java, XML, and Firebase.
 
 👥 User Side Features
 
+<br>
 1. User Authentication (Login / Signup using Firebase Authentication)
 
 2. Browse Cars – View all available cars with images, price, and details
@@ -19,7 +20,7 @@ Built using Java, XML, and Firebase.
 5. View Bookings – Users can see all their previous and current bookings
 
    <br>
-   1. User Authentication (Login / Signup)
+1. User Authentication (Login / Signup)
 
 The app provides a secure and easy-to-use authentication system powered by Firebase Authentication.
 Users can create accounts using:
@@ -54,6 +55,7 @@ Steps:
 (d) Confirm your booking with one tap.
 
 <br>
+
 4. Payment Option (Optional Integration)
 
 For enhanced functionality, the app can integrate with Razorpay, Google Pay, or UPI-based payment systems.
@@ -67,7 +69,9 @@ Key points:
 => After successful payment, booking status updates to “Confirmed”.
 
 <br>
+
 🚀 Future Improvements
+<br> 
 
 🌐 Google Maps integration for car pickup/drop locations
 
@@ -76,6 +80,8 @@ Key points:
 🔄 Booking cancellation and refund system
 
 🗣️ Multilingual Support
+
+<br>
 
 👨‍💻 Developed By :  Mohit Yadav
 
