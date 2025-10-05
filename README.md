@@ -9,15 +9,15 @@ Built using Java, XML, and Firebase.
 👥 User Side Features
 
 <br>
-1. User Authentication (Login / Signup using Firebase Authentication)
+[1]  User Authentication (Login / Signup using Firebase Authentication)
 
-2. Browse Cars – View all available cars with images, price, and details
+[2]  Browse Cars – View all available cars with images, price, and details
 
-3. Book a Car – Select rental dates and confirm booking
+[3]  Book a Car – Select rental dates and confirm booking
 
-4. Payment Option (Optional Integration) – Can be integrated with Razorpay or UPI
+[4]  Payment Option (Optional Integration) – Can be integrated with Razorpay or UPI
 
-5. View Bookings – Users can see all their previous and current bookings
+[5]  View Bookings – Users can see all their previous and current bookings
 
    <br>
 
